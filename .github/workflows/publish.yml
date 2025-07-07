@@ -11,5 +11,6 @@ jobs:
     with:
       image: WIPACrepo/wipac-dev-actions-testbed-docker
       mode: BUILD
+    secrets:
       registry_username: ${{ secrets.DOCKERHUB_USERNAME }}
       registry_token: ${{ secrets.DOCKERHUB_TOKEN }}
