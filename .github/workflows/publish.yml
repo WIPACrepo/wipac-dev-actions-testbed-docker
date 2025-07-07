@@ -1,0 +1,15 @@
+name: publish docker image
+
+on:
+  push:
+    branches: [ 'main' ]
+
+jobs:
+
+  image-publish:
+    uses: WIPACrepo/wipac-dev-workflows/image-publish/workflow.yml@image-publish
+    with:
+      image: WIPACrepo/wipac-dev-actions-testbed-docker
+      mode: BUILD
+      registry_username: ${{ secrets.DOCKERHUB_USERNAME }}
+      registry_token: ${{ secrets.DOCKERHUB_TOKEN }}
