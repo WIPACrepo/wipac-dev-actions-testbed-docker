@@ -1,3 +1,3 @@
-FROM alpine:python
+FROM python:3.13
 
 CMD []
