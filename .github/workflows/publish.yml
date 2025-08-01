@@ -1,8 +1,10 @@
 name: publish docker image
 
+
 on:
   push:
     branches: [ 'main' ]
+
 
 jobs:
   image-publish:
