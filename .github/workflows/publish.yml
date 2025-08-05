@@ -9,7 +9,7 @@ jobs:
     uses: WIPACrepo/wipac-dev-workflows/.github/workflows/image-publish.yml@image-publish
     with:
       image_registry: ghcr.io
-      image_namespace: wipacrepo/wipac-dev-actions-testbed-docker
+      image_namespace: wipacrepo
       image_name: wipac-dev-actions-testbed-docker
       mode: BUILD
     secrets:
