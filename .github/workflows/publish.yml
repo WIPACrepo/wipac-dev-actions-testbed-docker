@@ -5,7 +5,7 @@ on:
     branches: [ 'main' ]
   workflow_dispatch:
     inputs:
-      build_tag_override:
+      tag_override:
         description: 'the tag to publish and possibly overwrite'
         default: 'dev'
         required: false
@@ -17,4 +17,4 @@ jobs:
       image_namespace: wipacrepo
       image_name: wipac-dev-actions-testbed-docker
       mode: BUILD
-      build_tag_override: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.build_tag_override || '' }}
+      build_tag_override: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag_override || '' }}
