@@ -17,4 +17,4 @@ jobs:
       image_namespace: wipacrepo
       image_name: wipac-dev-actions-testbed-docker
       mode: BUILD
-      build_tag_override: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag_override || '' }}
+      publish_tag_override: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag_override || '' }}
