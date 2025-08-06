@@ -13,7 +13,7 @@ on:
 
 jobs:
   image-publish:
-    uses: WIPACrepo/wipac-dev-workflows/.github/workflows/image-publish.yml@publish_tag_override
+    uses: WIPACrepo/wipac-dev-workflows/.github/workflows/image-publish.yml@v1.4
     with:
       image_namespace: wipacrepo
       image_name: wipac-dev-actions-testbed-docker
