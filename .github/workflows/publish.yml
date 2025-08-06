@@ -3,6 +3,7 @@ name: publish docker image
 on:
   push:
     branches: [ 'main' ]
+    tags: [ '**' ]
   workflow_dispatch:
     inputs:
       tag_override:
