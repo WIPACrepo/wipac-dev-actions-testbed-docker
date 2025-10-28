@@ -16,7 +16,7 @@ jobs:
     uses: WIPACrepo/wipac-dev-workflows/.github/workflows/image-publish.yml@tag_suffix
     strategy:
       matrix:
-        flavor: [ "", chocolate ]
+        flavor: [ "", "chocolate" ]
     with:
       image_namespace: wipacrepo
       image_name: wipac-dev-actions-testbed-docker
